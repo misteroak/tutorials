@@ -1,19 +1,23 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Table from "./common/table";
+import { Link } from "react-router-dom";
 
 import Like from "./common/like";
 
 class MoviesTable extends Component {
   columns = [
-    { path: "title", label: "Title" },
+    { path: "title", label: "Title", content: (movie) => this.getMovieTitleLink(movie) },
     { path: "genre.name", label: "Genre" },
     { path: "numberInStock", label: "Stock" },
     { path: "dailyRentalRate", label: "Rate" },
-    // Special treatment for our actions column which is not derived from the data
     { key: "actions", label: "Actions", content: (movie) => this.getTableRowActionsContent(movie) },
   ];
 
+  getMovieTitleLink = (movie) => {
+    return <Link to={`/movies/${movie._id}`}>{movie.title}</Link>;
+  }
+  
   getTableRowActionsContent = (movie) => {
     const { onLike, onDelete } = this.props;
 

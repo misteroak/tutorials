@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class ProductDetails extends Component {
   handleSave = () => {
-    // programatic navigation (ie not as a reaction to <a> or <Link> click)
+    // programatic navigation (ie not in reponse to <a> or <Link> click)
     this.props.history.push("/products");
   };
 
