@@ -1,0 +1,25 @@
+{
+    "cSpell.words": [
+        "appbar",
+        "datasources",
+        "mockito",
+        "nullsafety",
+        "schyler",
+        "usecase",
+        "usecases",
+        "wireframe"
+    ],
+    "explorer.compactFolders": false,
+    "explorer.autoReveal": false,
+    "workbench.list.openMode": "doubleClick",
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.tree.indent": 18,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.fontAliasing": "antialiased",
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "dart.flutterTestAdditionalArgs": [
+        "--no-sound-null-safety"
+    ]
+}
