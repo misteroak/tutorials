@@ -3,6 +3,12 @@
         "coder",
         "ddd",
         "flutter",
+        "nullsafety",
         "reso"
+    ],
+    "bloc.newBlocTemplate": "simple",
+    "cSpell.ignoreWords": [
+        "auth",
+        "facade"
     ]
 }
